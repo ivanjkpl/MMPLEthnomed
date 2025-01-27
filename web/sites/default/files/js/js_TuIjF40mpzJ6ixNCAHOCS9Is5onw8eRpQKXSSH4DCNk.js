@@ -1,0 +1,2 @@
+/* @license GPL-2.0-or-later https://www.drupal.org/licensing/faq */
+(function($){"use strict";Drupal.behaviors.atFFOI={attach:function(){$('html').addClass('fa-loading');var fontObserver=new FontFaceObserver('FontAwesome');fontObserver.load('\uf287\uf142\uf0fc').then(function(){$('html').removeClass('fa-loading').addClass('fa-loaded');},function(){$('html').removeClass('fa-loading').addClass('fa-unavailable');});}};}(jQuery));;
